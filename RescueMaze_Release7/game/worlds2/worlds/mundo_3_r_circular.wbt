@@ -1,0 +1,324 @@
+#VRML_SIM R2020a utf8
+WorldInfo {
+}
+Viewpoint {
+  orientation 0.002055905333693307 0.9999643771855743 0.0081864285940271 2.8893122754919514
+  position 1.7061735684798511 0.3344360299256072 -2.102318379241422
+}
+TexturedBackground {
+}
+TexturedBackgroundLight {
+}
+Group {
+  children [
+    DEF TILE_6-6 worldTile {
+      xPos 6
+      zPos 6
+      floor TRUE
+      rightWall TRUE
+      bottomWall TRUE
+    }
+    DEF TILE_6-5 worldTile {
+      xPos 6
+      zPos 5
+      floor TRUE
+      rightWall TRUE
+    }
+    DEF TILE_6-4 worldTile {
+      xPos 6
+      zPos 4
+      floor TRUE
+      rightWall TRUE
+    }
+    DEF TILE_6-3 worldTile {
+      xPos 6
+      zPos 3
+      floor TRUE
+      rightWall TRUE
+    }
+    DEF TILE_6-2 worldTile {
+      xPos 6
+      zPos 2
+      floor TRUE
+      rightWall TRUE
+    }
+    DEF TILE_6-1 worldTile {
+      xPos 6
+      zPos 1
+      floor TRUE
+      rightWall TRUE
+    }
+    DEF TILE_6-0 worldTile {
+      xPos 6
+      floor TRUE
+      topWall TRUE
+      rightWall TRUE
+    }
+    DEF TILE_5-6 worldTile {
+      xPos 5
+      zPos 6
+      floor TRUE
+      bottomWall TRUE
+    }
+    DEF TILE_5-5 worldTile {
+      xPos 5
+      zPos 5
+      floor TRUE
+    }
+    DEF TILE_5-4 worldTile {
+      xPos 5
+      zPos 4
+      floor TRUE
+      rightWall TRUE
+      bottomWall TRUE
+    }
+    DEF TILE_5-3 worldTile {
+      xPos 5
+      zPos 3
+      floor TRUE
+    }
+    DEF TILE_5-2 worldTile {
+      xPos 5
+      zPos 2
+      floor TRUE
+      topWall TRUE
+      rightWall TRUE
+    }
+    DEF TILE_5-1 worldTile {
+      xPos 5
+      zPos 1
+      floor TRUE
+    }
+    DEF TILE_4-6 worldTile {
+      xPos 4
+      zPos 6
+      floor TRUE
+      bottomWall TRUE
+    }
+    DEF TILE_4-5 worldTile {
+      xPos 4
+      zPos 5
+      floor TRUE
+    }
+    DEF TILE_4-4 worldTile {
+      xPos 4
+      zPos 4
+      floor TRUE
+      rightWall TRUE
+      bottomWall TRUE
+    }
+    DEF TILE_4-3 worldTile {
+      xPos 4
+      zPos 3
+      floor TRUE
+      rightWall TRUE
+    }
+    DEF TILE_4-2 worldTile {
+      xPos 4
+      zPos 2
+      floor TRUE
+      rightWall TRUE
+    }
+    DEF TILE_4-1 worldTile {
+      xPos 4
+      zPos 1
+      floor TRUE
+    }
+    DEF TILE_3-6 worldTile {
+      xPos 3
+      zPos 6
+      floor TRUE
+      bottomWall TRUE
+    }
+    DEF TILE_3-5 worldTile {
+      xPos 3
+      zPos 5
+      floor TRUE
+      rightWall TRUE
+    }
+    DEF TILE_3-4 worldTile {
+      xPos 3
+      zPos 4
+      floor TRUE
+      bottomWall TRUE
+    }
+    DEF TILE_3-1 worldTile {
+      xPos 3
+      zPos 1
+      floor TRUE
+      rightWall TRUE
+    }
+    DEF TILE_3-2 worldTile {
+      xPos 3
+      zPos 2
+      floor TRUE
+      rightWall TRUE
+    }
+    DEF TILE_3-3 worldTile {
+      xPos 3
+      zPos 3
+      floor TRUE
+      rightWall TRUE
+      bottomWall TRUE
+    }
+    DEF TILE_2-3 worldTile {
+      xPos 2
+      zPos 3
+      floor TRUE
+    }
+    DEF TILE_2-4 worldTile {
+      xPos 2
+      zPos 4
+      floor TRUE
+      rightWall TRUE
+    }
+    DEF TILE_2-5 worldTile {
+      xPos 2
+      zPos 5
+      floor TRUE
+    }
+    DEF TILE_2-6 worldTile {
+      xPos 2
+      zPos 6
+      floor TRUE
+      rightWall TRUE
+      bottomWall TRUE
+    }
+    DEF TILE_1-6 worldTile {
+      xPos 1
+      zPos 6
+      floor TRUE
+      bottomWall TRUE
+    }
+    DEF TILE_0-6 worldTile {
+      zPos 6
+      floor TRUE
+      bottomWall TRUE
+      leftWall TRUE
+    }
+    DEF TILE_0-5 worldTile {
+      zPos 5
+      floor TRUE
+      leftWall TRUE
+    }
+    DEF TILE_1-5 worldTile {
+      xPos 1
+      zPos 5
+      floor TRUE
+      rightWall TRUE
+      bottomWall TRUE
+      leftWall TRUE
+    }
+    DEF TILE_1-4 worldTile {
+      xPos 1
+      zPos 4
+      floor TRUE
+      rightWall TRUE
+    }
+    DEF TILE_1-3 worldTile {
+      xPos 1
+      zPos 3
+      floor TRUE
+      rightWall TRUE
+    }
+    DEF TILE_0-4 worldTile {
+      zPos 4
+      floor TRUE
+      leftWall TRUE
+    }
+    DEF TILE_0-3 worldTile {
+      zPos 3
+      floor TRUE
+      rightWall TRUE
+      leftWall TRUE
+    }
+    DEF TILE_2-2 worldTile {
+      xPos 2
+      zPos 2
+      floor TRUE
+      rightWall TRUE
+      bottomWall TRUE
+    }
+    DEF TILE_1-2 worldTile {
+      xPos 1
+      zPos 2
+      floor TRUE
+      bottomWall TRUE
+    }
+    DEF TILE_2-1 worldTile {
+      xPos 2
+      zPos 1
+      floor TRUE
+      rightWall TRUE
+    }
+    DEF TILE_1-1 worldTile {
+      xPos 1
+      zPos 1
+      floor TRUE
+    }
+    DEF TILE_0-2 worldTile {
+      zPos 2
+      floor TRUE
+      leftWall TRUE
+    }
+    DEF TILE_0-1 worldTile {
+      zPos 1
+      floor TRUE
+      rightWall TRUE
+      leftWall TRUE
+    }
+    DEF TILE_5-0 worldTile {
+      xPos 5
+      floor TRUE
+      rightWall TRUE
+      bottomWall TRUE
+      start TRUE
+    }
+    DEF TILE_4-0 worldTile {
+      xPos 4
+      floor TRUE
+      topWall TRUE
+      bottomWall TRUE
+    }
+    DEF TILE_3-0 worldTile {
+      xPos 3
+      floor TRUE
+      topWall TRUE
+      bottomWall TRUE
+    }
+    DEF TILE_2-0 worldTile {
+      xPos 2
+      floor TRUE
+      topWall TRUE
+      bottomWall TRUE
+    }
+    DEF TILE_1-0 worldTile {
+      xPos 1
+      floor TRUE
+      topWall TRUE
+      bottomWall TRUE
+      bottomRightCorner TRUE
+    }
+    DEF TILE_0-0 worldTile {
+      floor TRUE
+      topWall TRUE
+      leftWall TRUE
+      topLeftCorner TRUE
+      bottomRightCorner TRUE
+    }
+  ]
+}
+
+DEF MAINSUPERVISOR Robot {
+  children [
+    Receiver {
+      channel 1
+    }
+  ]
+  supervisor TRUE
+  controller "MainSupervisor"
+  window "MainSupervisorWindow"
+  showWindow TRUE
+}
+
+

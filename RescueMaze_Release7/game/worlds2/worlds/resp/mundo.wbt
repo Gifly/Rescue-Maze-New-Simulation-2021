@@ -1,0 +1,91 @@
+#VRML_SIM R2021a utf8
+WorldInfo {
+  coordinateSystem "NUE"
+}
+Viewpoint {
+  orientation 0.0065590115468666015 0.7361518063162038 0.6767846758201004 3.1468628381626056
+  position 0.6092482918882507 4.949327266662046 -0.30352684352323367
+}
+TexturedBackground {
+}
+TexturedBackgroundLight {
+}
+Group {
+  children [
+    DEF TILE_2-2 worldTile {
+      xPos 2
+      zPos 2
+      floor TRUE
+      rightWall TRUE
+      bottomWall TRUE
+    }
+    DEF TILE_1-2 worldTile {
+      xPos 1
+      zPos 2
+      floor TRUE
+      bottomWall TRUE
+    }
+    DEF TILE_2-1 worldTile {
+      xPos 2
+      zPos 1
+      floor TRUE
+      rightWall TRUE
+    }
+    DEF TILE_1-1 worldTile {
+      xPos 1
+      zPos 1
+      floor TRUE
+    }
+    DEF TILE_0-2 worldTile {
+      zPos 2
+      floor TRUE
+      bottomWall TRUE
+      leftWall TRUE
+    }
+    DEF TILE_0-1 worldTile {
+      zPos 1
+      floor TRUE
+      rightWall TRUE
+      leftWall TRUE
+    }
+    DEF TILE_5-0 worldTile {
+      xPos 5
+      floor TRUE
+      rightWall TRUE
+      bottomWall TRUE
+      start TRUE
+    }
+    DEF TILE_4-0 worldTile {
+      xPos 4
+      floor TRUE
+      topWall TRUE
+      bottomWall TRUE
+    }
+    DEF TILE_3-0 worldTile {
+      xPos 3
+      floor TRUE
+      topWall TRUE
+      bottomWall TRUE
+    }
+    DEF TILE_2-0 worldTile {
+      xPos 2
+      floor TRUE
+      topWall TRUE
+      bottomWall TRUE
+    }
+    DEF TILE_1-0 worldTile {
+      xPos 1
+      floor TRUE
+      topWall TRUE
+      bottomWall TRUE
+      bottomRightCorner TRUE
+    }
+    DEF TILE_0-0 worldTile {
+      floor TRUE
+      topWall TRUE
+      leftWall TRUE
+      topLeftCorner TRUE
+      bottomRightCorner TRUE
+    }
+  ]
+}

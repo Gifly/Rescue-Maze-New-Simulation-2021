@@ -1,0 +1,460 @@
+#VRML_SIM R2020a utf8
+WorldInfo {
+  basicTimeStep 16
+}
+Viewpoint {
+  orientation -0.9999874738864718 0.003315085310192853 0.003749970605078064 1.6937624316186382
+  position 2.2185324569951437 7.530809576405814 0.3797108159819344
+}
+TexturedBackground {
+}
+TexturedBackgroundLight {
+}
+DEF WALLTILES Group {
+  children [
+    DEF TILE_6-6 worldTile {
+      xPos 6
+      zPos 6
+      floor TRUE
+      rightWall TRUE
+      bottomWall TRUE
+    }
+    DEF TILE_6-5 worldTile {
+      xPos 6
+      zPos 5
+      floor TRUE
+      rightWall TRUE
+    }
+    DEF TILE_6-4 worldTile {
+      xPos 6
+      zPos 4
+      floor TRUE
+      rightWall TRUE
+    }
+    DEF TILE_6-3 worldTile {
+      xPos 6
+      zPos 3
+      floor TRUE
+      rightWall TRUE
+    }
+    DEF TILE_6-2 worldTile {
+      xPos 6
+      zPos 2
+      floor TRUE
+      rightWall TRUE
+    }
+    DEF TILE_6-1 worldTile {
+      xPos 6
+      zPos 1
+      floor TRUE
+      rightWall TRUE
+    }
+    DEF TILE_6-0 worldTile {
+      xPos 6
+      floor TRUE
+      topWall TRUE
+      rightWall TRUE
+    }
+    DEF TILE_5-6 worldTile {
+      xPos 5
+      zPos 6
+      floor TRUE
+      bottomWall TRUE
+    }
+    DEF TILE_5-5 worldTile {
+      xPos 5
+      zPos 5
+      floor TRUE
+    }
+    DEF TILE_5-4 worldTile {
+      xPos 5
+      zPos 4
+      floor TRUE
+      rightWall TRUE
+      bottomWall TRUE
+    }
+    DEF TILE_5-3 worldTile {
+      xPos 5
+      zPos 3
+      floor TRUE
+    }
+    DEF TILE_5-2 worldTile {
+      xPos 5
+      zPos 2
+      floor TRUE
+      topWall TRUE
+      rightWall TRUE
+    }
+    DEF TILE_5-1 worldTile {
+      xPos 5
+      zPos 1
+      floor TRUE
+    }
+    DEF TILE_4-6 worldTile {
+      xPos 4
+      zPos 6
+      floor TRUE
+      bottomWall TRUE
+    }
+    DEF TILE_4-5 worldTile {
+      xPos 4
+      zPos 5
+      floor TRUE
+    }
+    DEF TILE_4-4 worldTile {
+      xPos 4
+      zPos 4
+      floor TRUE
+      rightWall TRUE
+      bottomWall TRUE
+    }
+    DEF TILE_4-3 worldTile {
+      xPos 4
+      zPos 3
+      floor TRUE
+      rightWall TRUE
+    }
+    DEF TILE_4-2 worldTile {
+      xPos 4
+      zPos 2
+      floor TRUE
+      rightWall TRUE
+    }
+    DEF TILE_4-1 worldTile {
+      xPos 4
+      zPos 1
+      floor TRUE
+    }
+    DEF TILE_3-6 worldTile {
+      xPos 3
+      zPos 6
+      floor TRUE
+      bottomWall TRUE
+    }
+    DEF TILE_3-5 worldTile {
+      xPos 3
+      zPos 5
+      floor TRUE
+      rightWall TRUE
+    }
+    DEF TILE_3-4 worldTile {
+      xPos 3
+      zPos 4
+      floor TRUE
+      bottomWall TRUE
+    }
+    DEF TILE_3-1 worldTile {
+      xPos 3
+      zPos 1
+      floor TRUE
+      rightWall TRUE
+    }
+    DEF TILE_3-2 worldTile {
+      xPos 3
+      zPos 2
+      floor TRUE
+      rightWall TRUE
+    }
+    DEF TILE_3-3 worldTile {
+      xPos 3
+      zPos 3
+      floor TRUE
+      rightWall TRUE
+      bottomWall TRUE
+    }
+    DEF TILE_2-3 worldTile {
+      xPos 2
+      zPos 3
+      floor TRUE
+    }
+    DEF TILE_2-4 worldTile {
+      xPos 2
+      zPos 4
+      floor TRUE
+      rightWall TRUE
+    }
+    DEF TILE_2-5 worldTile {
+      xPos 2
+      zPos 5
+      floor TRUE
+    }
+    DEF TILE_2-6 worldTile {
+      xPos 2
+      zPos 6
+      floor TRUE
+      rightWall TRUE
+      bottomWall TRUE
+    }
+    DEF TILE_1-6 worldTile {
+      xPos 1
+      zPos 6
+      floor TRUE
+      bottomWall TRUE
+    }
+    DEF TILE_0-6 worldTile {
+      zPos 6
+      floor TRUE
+      bottomWall TRUE
+      leftWall TRUE
+    }
+    DEF TILE_0-5 worldTile {
+      zPos 5
+      floor TRUE
+      leftWall TRUE
+    }
+    DEF TILE_1-5 worldTile {
+      xPos 1
+      zPos 5
+      floor TRUE
+      rightWall TRUE
+      bottomWall TRUE
+      leftWall TRUE
+    }
+    DEF TILE_1-4 worldTile {
+      xPos 1
+      zPos 4
+      floor TRUE
+      rightWall TRUE
+    }
+    DEF TILE_1-3 worldTile {
+      xPos 1
+      zPos 3
+      floor TRUE
+      rightWall TRUE
+    }
+    DEF TILE_0-4 worldTile {
+      zPos 4
+      floor TRUE
+      leftWall TRUE
+    }
+    DEF TILE_0-3 worldTile {
+      zPos 3
+      floor TRUE
+      rightWall TRUE
+      leftWall TRUE
+    }
+    DEF TILE_2-2 worldTile {
+      xPos 2
+      zPos 2
+      floor TRUE
+      rightWall TRUE
+      bottomWall TRUE
+    }
+    DEF TILE_1-2 worldTile {
+      xPos 1
+      zPos 2
+      floor TRUE
+      bottomWall TRUE
+    }
+    DEF TILE_2-1 worldTile {
+      xPos 2
+      zPos 1
+      floor TRUE
+      rightWall TRUE
+    }
+    DEF TILE_1-1 worldTile {
+      xPos 1
+      zPos 1
+      floor TRUE
+    }
+    DEF TILE_0-2 worldTile {
+      zPos 2
+      floor TRUE
+      leftWall TRUE
+    }
+    DEF TILE_0-1 worldTile {
+      zPos 1
+      floor TRUE
+      rightWall TRUE
+      leftWall TRUE
+    }
+    DEF TILE_5-0 worldTile {
+      xPos 5
+      floor TRUE
+      rightWall TRUE
+      bottomWall TRUE
+      start TRUE
+    }
+    DEF TILE_4-0 worldTile {
+      xPos 4
+      floor TRUE
+      topWall TRUE
+      bottomWall TRUE
+    }
+    DEF TILE_3-0 worldTile {
+      xPos 3
+      floor TRUE
+      topWall TRUE
+      bottomWall TRUE
+    }
+    DEF TILE_2-0 worldTile {
+      xPos 2
+      floor TRUE
+      topWall TRUE
+      bottomWall TRUE
+    }
+    DEF TILE_1-0 worldTile {
+      xPos 1
+      floor TRUE
+      topWall TRUE
+      bottomWall TRUE
+      bottomRightCorner TRUE
+    }
+    DEF TILE_0-0 worldTile {
+      floor TRUE
+      topWall TRUE
+      leftWall TRUE
+      topLeftCorner TRUE
+      bottomRightCorner TRUE
+    }
+  ]
+}
+DEF CHECKPOINTBOUNDS Group {
+  children [
+    DEF boundary Group {
+      children [
+        DEF checkpoint0min Transform {
+          translation -0.04 -0.03 0.94
+        }
+        DEF checkpoint0max Transform {
+          translation 1.15 -0.03 1.57
+        }
+      ]
+    }
+    DEF boundary Group {
+      children [
+        DEF checkpoint1min Transform {
+          translation 1.76 -0.03 0.12
+        }
+        DEF checkpoint1max Transform {
+          translation 0.86 -0.03 0.29
+        }
+      ]
+    }
+  ]
+}
+DEF TRAPBOUNDS Group {
+  children [
+    DEF boundary Group {
+      children [
+        DEF trap0min Transform {
+          translation 0.26 -0.03 0.91
+        }
+        DEF trap0max Transform {
+          translation 1.14 -0.03 0.29
+        }
+      ]
+    }
+  ]
+}
+DEF STARTBOUNDS Group {
+  children [
+    DEF boundary Group {
+      children [
+        DEF start0min Transform {
+          translation 1.51 -0.03 0.03
+        }
+        DEF start0max Transform {
+          translation 0.82 -0.03 1.56
+        }
+      ]
+    }
+  ]
+}
+DEF SWAMPBOUNDS Group {
+  children [
+    DEF boundary Group {
+      children [
+        DEF swamp0min Transform {
+          translation 1.19 -0.03 0.66
+        }
+        DEF swamp0max Transform {
+          translation 0.96 -0.03 1.25
+        }
+      ]
+    }
+  ]
+}
+DEF OBSTACLES Group {
+}
+DEF DEBRIS Group {
+}
+DEF HUMANGROUP Group {
+  children [
+    Victim {
+      translation 1.91535 0 0.182184
+      rotation 0 1 0 -1.57
+      name "Victim0"
+      type "unharmed"
+    }
+    Victim {
+      translation 1.77312 0 0.358341
+      rotation 0 1 0 3.14
+      name "Victim1"
+    }
+    HeatVictim {
+      translation 1.76 0 0.5744
+      name "HeatVictim2"
+    }
+    HeatVictim {
+      translation 1.75631 0 0.869415
+      rotation 0 1 0 -1.57
+      name "HeatVictim3"
+      scoreWorth 30
+    }
+    Victim {
+      translation 1.91388 0 1.25957
+      rotation 0 1 0 1.57
+      name "Victim4"
+      type "unharmed"
+      scoreWorth 30
+    }
+    HeatVictim {
+      translation 1.841 0 1.2944
+      name "HeatVictim5"
+      scoreWorth 30
+    }
+    Victim {
+      translation 1.95558 0 1.54818
+      rotation 0 1 0 3.14
+      name "Victim6"
+      type "stable"
+      scoreWorth 30
+    }
+    Victim {
+      translation 1.69429 0 0.596264
+      rotation 0 1 0 1.57
+      name "Victim7"
+      type "stable"
+      scoreWorth 30
+    }
+    Victim {
+      translation 1.96633 0 1.68144
+      rotation 0 1 0 -1.57
+      name "Victim8"
+      scoreWorth 30
+    }
+    Victim {
+      translation 1.94354 0 1.54237
+      rotation 0 1 0 1.57
+      name "Victim9"
+    }
+    HeatVictim {
+      translation 1.84709 0 1.76663
+      rotation 0 1 0 -1.57
+      name "HeatVictim10"
+    }
+  ]
+}
+
+DEF MAINSUPERVISOR Robot {
+  children [
+    Receiver {
+      channel 1
+    }
+  ]
+  controller "MainSupervisor"
+  supervisor TRUE
+  showWindow TRUE
+  window "MainSupervisorWindow"
+}

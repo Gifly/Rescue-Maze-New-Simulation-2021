@@ -1,0 +1,693 @@
+#VRML_SIM R2020a utf8
+WorldInfo {
+}
+Viewpoint {
+  orientation 0.9972051045631689 -0.0722612218376113 -0.018981444931686412 5.768058165008446
+  position -0.0029679837571329262 1.9803976666636272 1.9496368971743019
+}
+DEF paredes Group {
+  children [
+    DEF x worldTile {
+      floor TRUE
+      rightWall TRUE
+      bottomWall TRUE
+      leftWall TRUE
+      start TRUE
+    }
+    DEF Pared0-0 worldTile {
+      xPos 2
+      zPos -1
+      floor TRUE
+      rightWall TRUE
+      bottomWall TRUE
+    }
+    DEF pared0-1 worldTile {
+      xPos 1
+      zPos -1
+      floor TRUE
+      topWall TRUE
+      bottomWall TRUE
+      leftWall TRUE
+    }
+    DEF pared0-3 worldTile {
+      zPos -1
+      floor TRUE
+      rightWall TRUE
+    }
+    DEF pared0-4 worldTile {
+      xPos -1
+      zPos -1
+      floor TRUE
+      bottomWall TRUE
+      checkpoint TRUE
+    }
+    DEF pared0-5 worldTile {
+      xPos -3
+      zPos -1
+      floor TRUE
+      bottomWall TRUE
+    }
+    DEF pared0-6 worldTile {
+      xPos -4
+      zPos -1
+      floor TRUE
+      bottomWall TRUE
+      leftWall TRUE
+    }
+    DEF pared1-0 worldTile {
+      xPos 2
+      zPos -2
+      floor TRUE
+      rightWall TRUE
+    }
+    DEF pared1-1 worldTile {
+      xPos 1
+      zPos -2
+      floor TRUE
+    }
+    DEF pared1-2 worldTile {
+      zPos -2
+      floor TRUE
+      leftWall TRUE
+    }
+    DEF pared1-3 worldTile {
+      xPos -1
+      zPos -2
+      floor TRUE
+      rightWall TRUE
+    }
+    DEF pared1-4 worldTile {
+      xPos -2
+      zPos -2
+      floor TRUE
+    }
+    DEF pared1-5 worldTile {
+      xPos -3
+      zPos -2
+      floor TRUE
+      topWall TRUE
+      leftWall TRUE
+    }
+    DEF pared1-6 worldTile {
+      xPos -4
+      zPos -2
+      floor TRUE
+      rightWall TRUE
+      leftWall TRUE
+    }
+    DEF pared2-1 worldTile {
+      xPos 1
+      zPos -3
+      floor TRUE
+      topWall TRUE
+    }
+    DEF pared2-2 worldTile {
+      zPos -3
+      floor TRUE
+      topWall TRUE
+    }
+    DEF pared2-3 worldTile {
+      xPos -1
+      zPos -3
+      floor TRUE
+      topWall TRUE
+      leftWall TRUE
+    }
+    DEF pared2-4 worldTile {
+      xPos -2
+      zPos -3
+      floor TRUE
+      topWall TRUE
+      rightWall TRUE
+    }
+    DEF pared2-5 worldTile {
+      xPos -3
+      zPos -3
+      floor TRUE
+      bottomWall TRUE
+      leftWall TRUE
+    }
+    DEF pared2-6 worldTile {
+      xPos -4
+      zPos -3
+      floor TRUE
+      topWall TRUE
+      rightWall TRUE
+      leftWall TRUE
+    }
+    DEF pares3-0 worldTile {
+      xPos 2
+      zPos -4
+      floor TRUE
+      rightWall TRUE
+    }
+    DEF pared3-1 worldTile {
+      xPos 1
+      zPos -4
+      floor TRUE
+      bottomWall TRUE
+    }
+    DEF pared3-2 worldTile {
+      zPos -4
+      floor TRUE
+      topWall TRUE
+      bottomWall TRUE
+    }
+    DEF pared3-3 worldTile {
+      xPos -1
+      zPos -4
+      floor TRUE
+      topWall TRUE
+      bottomWall TRUE
+    }
+    DEF pared3-4 worldTile {
+      xPos -2
+      zPos -4
+      floor TRUE
+      bottomWall TRUE
+      leftWall TRUE
+    }
+    DEF pares3-5 worldTile {
+      xPos -3
+      zPos -4
+      floor TRUE
+      rightWall TRUE
+    }
+    DEF pares3-6 worldTile {
+      xPos -4
+      zPos -4
+      floor TRUE
+      bottomWall TRUE
+      leftWall TRUE
+      swamp TRUE
+    }
+    DEF pared4-0 worldTile {
+      xPos 2
+      zPos -5
+      floor TRUE
+      rightWall TRUE
+      leftWall TRUE
+    }
+    DEF pared4-1 worldTile {
+      xPos 1
+      zPos -5
+      floor TRUE
+      rightWall TRUE
+      swamp TRUE
+    }
+    DEF pared4-2 worldTile {
+      zPos -5
+      floor TRUE
+      bottomWall TRUE
+      leftWall TRUE
+    }
+    DEF pared4-3 worldTile {
+      xPos -1
+      zPos -5
+      floor TRUE
+      rightWall TRUE
+      bottomWall TRUE
+    }
+    DEF pared4-4 worldTile {
+      xPos -2
+      zPos -5
+      floor TRUE
+      topWall TRUE
+    }
+    DEF pared4-5 worldTile {
+      xPos -3
+      zPos -5
+      floor TRUE
+    }
+    DEF pared4-6 worldTile {
+      xPos -4
+      zPos -5
+      floor TRUE
+      topWall TRUE
+      leftWall TRUE
+    }
+    DEF pared5-0 worldTile {
+      xPos 2
+      zPos -6
+      floor TRUE
+      rightWall TRUE
+      leftWall TRUE
+    }
+    DEF pared5-1 worldTile {
+      xPos 1
+      zPos -6
+      floor TRUE
+      rightWall TRUE
+    }
+    DEF pared5-2 worldTile {
+      zPos -6
+      floor TRUE
+      leftWall TRUE
+    }
+    DEF pared5-3 worldTile {
+      xPos -1
+      zPos -6
+      floor TRUE
+      rightWall TRUE
+      leftWall TRUE
+    }
+    DEF pared5-4 worldTile {
+      xPos -2
+      zPos -6
+      floor TRUE
+      topWall TRUE
+      rightWall TRUE
+      bottomWall TRUE
+    }
+    DEF pared5-5 worldTile {
+      xPos -3
+      zPos -6
+      floor TRUE
+    }
+    DEF pared5-6 worldTile {
+      xPos -4
+      zPos -6
+      floor TRUE
+      bottomWall TRUE
+      leftWall TRUE
+    }
+    DEF pared6-0 worldTile {
+      xPos 2
+      zPos -7
+      floor TRUE
+      topWall TRUE
+      rightWall TRUE
+    }
+    DEF pared6-1 worldTile {
+      xPos 1
+      zPos -7
+      floor TRUE
+      topWall TRUE
+      leftWall TRUE
+    }
+    DEF pared6-2 worldTile {
+      zPos -7
+      floor TRUE
+      topWall TRUE
+      rightWall TRUE
+    }
+    DEF pared6-3 worldTile {
+      xPos -1
+      zPos -7
+      floor TRUE
+      topWall TRUE
+    }
+    DEF pared6-4 worldTile {
+      xPos -2
+      zPos -7
+      floor TRUE
+      topWall TRUE
+      bottomWall TRUE
+    }
+    DEF pared6-5 worldTile {
+      xPos -3
+      zPos -7
+      floor TRUE
+      topWall TRUE
+    }
+    DEF pared6-6 worldTile {
+      xPos -4
+      zPos -7
+      floor TRUE
+      topWall TRUE
+      leftWall TRUE
+      checkpoint TRUE
+    }
+  ]
+}
+DEF agujeros Group {
+  children [
+    DEF agujero_0 worldTile {
+      xPos -2
+      zPos -1
+      topWall TRUE
+      bottomWall TRUE
+      trap TRUE
+    }
+    DEF agujero2 worldTile {
+      xPos 2
+      zPos -3
+      rightWall TRUE
+      trap TRUE
+    }
+  ]
+}
+DEF victimas Group {
+  children [
+    DEF victima1-0 Victim {
+      translation 0.73 0.02 -0.61
+      rotation 0 1 0 1.5708
+    }
+    DEF victima1-3 Victim {
+      translation -0.166775 0 -0.603225
+      rotation 0 1 0 -1.5707953071795862
+      name "Victim(1)"
+    }
+    DEF victima1-5 Victim {
+      translation -0.89 0 -0.73
+      name "Victim(2)"
+    }
+    DEF viccalor2-2 HeatVictim {
+      translation 0.01 0.01 -1.02
+    }
+    DEF viccalor2-6 HeatVictim {
+      translation -1.21 0 -1.02
+      name "HeatVictim(1)"
+    }
+    DEF victima3-0 Victim {
+      translation 0.73 0 -1.21
+      rotation 0 1 0 1.5708
+      name "Victim(2)"
+    }
+    DEF victima3-2 Victim {
+      translation 0.02 0 -1.33
+      name "Victim(2)"
+    }
+    DEF victima4-4 Victim {
+      translation -0.59 0 -1.63
+      name "Victim(2)"
+    }
+    DEF viccalor5-3 HeatVictim {
+      translation 0.41 0 -1.82
+      name "HeatVictim(2)"
+    }
+    DEF victima6-1 Victim {
+      translation 0.28 0 -2.23
+      name "Victim(2)"
+    }
+    DEF victima6-5 Victim {
+      translation -0.94 0 -2.23
+      name "Victim(2)"
+    }
+  ]
+}
+DEF obstaculos Group {
+  children [
+    DEF obstaculo2 Solid {
+      translation 0.655355 -0.03 -2.16293
+      rotation 0 1 0 -0.785395307179586
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 1 0 0
+          }
+          geometry Box {
+            size 0.1 0.2 0.1
+          }
+        }
+      ]
+      name "solid(1)"
+    }
+    DEF obstaculo1 Solid {
+      translation 0.17993067478123606 -0.025167870238262727 -0.7894197673937366
+      rotation -0.000653477454845488 0.9999990806347668 -0.001188148491170262 0.7856618607477672
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 1 0 0
+          }
+          geometry Box {
+            size 0.05 0.2 0.2
+          }
+        }
+      ]
+      boundingObject DEF caja Box {
+        size 0.1 0.1 0.1
+      }
+      physics Physics {
+      }
+      linearVelocity 1.701694486986146e-08 6.968163369265641e-06 1.8296802827940917e-07
+      angularVelocity 3.7785769265407527e-06 -1.8524489275103948e-08 -2.2913240579450995e-07
+    }
+  ]
+}
+TexturedBackground {
+}
+TexturedBackgroundLight {
+}
+Robot {
+  translation 0 0 0
+  rotation -3.8163700359928906e-05 0.9999999983316222 -4.336228062393923e-05 -1.5707934744154997
+  children [
+    DEF ds_df DistanceSensor {
+      translation -0.08 0.015 0.05
+      rotation 0 1 0 3.1415853071795863
+      children [
+        DEF caja Shape {
+          appearance PBRAppearance {
+            baseColor 0 1 0
+            metalness 0
+          }
+          geometry Box {
+            size 0.02 0.03 0.04
+          }
+        }
+      ]
+      name "ds_df"
+      boundingObject USE caja
+      physics Physics {
+      }
+      type "sonar"
+    }
+    DEF ds_dt DistanceSensor {
+      translation -0.08 0.015 -0.07
+      rotation 0 1 0 3.1415853071795863
+      children [
+        DEF caja Shape {
+          appearance PBRAppearance {
+            baseColor 0 1 0
+            metalness 0
+          }
+          geometry Box {
+            size 0.02 0.03 0.04
+          }
+        }
+      ]
+      name "ds_dt"
+      boundingObject USE caja
+      physics Physics {
+      }
+      type "sonar"
+    }
+    DEF ds_it DistanceSensor {
+      translation 0.08 0.015 -0.07
+      rotation 0.02864606727828188 6.350214884075488e-06 -0.999589617187555 5.249516299208874e-06
+      children [
+        DEF caja Shape {
+          appearance PBRAppearance {
+            baseColor 0 1 0
+            metalness 0
+          }
+          geometry Box {
+            size 0.02 0.03 0.04
+          }
+        }
+      ]
+      name "ds_it"
+      boundingObject USE caja
+      physics Physics {
+      }
+      type "sonar"
+    }
+    DEF ds_if DistanceSensor {
+      translation 0.08 0.015 0.05
+      rotation 0.02864606727828188 6.350214884075488e-06 -0.999589617187555 5.249516299208874e-06
+      children [
+        DEF caja Shape {
+          appearance PBRAppearance {
+            baseColor 0 1 0
+            metalness 0
+          }
+          geometry Box {
+            size 0.02 0.03 0.04
+          }
+        }
+      ]
+      name "ds_if"
+      boundingObject USE caja
+      physics Physics {
+      }
+      type "sonar"
+    }
+    DEF ds_fi DistanceSensor {
+      translation 0.06 0.015 0.08
+      rotation 2.548432096594124e-06 0.9999999999931052 2.7009601323528077e-06 -1.5699999999735148
+      children [
+        DEF caja Shape {
+          appearance PBRAppearance {
+            baseColor 0 1 0
+            metalness 0
+          }
+          geometry Box {
+            size 0.02 0.03 0.04
+          }
+        }
+      ]
+      name "ds_fi"
+      boundingObject USE caja
+      physics Physics {
+      }
+    }
+    DEF ds_fd DistanceSensor {
+      translation -0.06 0.015 0.08
+      rotation 2.548432096594124e-06 0.9999999999931052 2.7009601323528077e-06 -1.5699999999735148
+      children [
+        DEF caja Shape {
+          appearance PBRAppearance {
+            baseColor 0 1 0
+            metalness 0
+          }
+          geometry Box {
+            size 0.02 0.03 0.04
+          }
+        }
+      ]
+      name "ds_fd"
+      boundingObject USE caja
+      physics Physics {
+      }
+    }
+    DEF rif HingeJoint {
+      jointParameters HingeJointParameters {
+        position 128.15505667097534
+        anchor 0.07 -0.025 0.05
+      }
+      device [
+        RotationalMotor {
+          name "m_rif"
+        }
+      ]
+      endPoint DEF wheel_if Solid {
+        translation 0.07 -0.025002104237313694 0.049999302673071684
+        rotation 0.6881263905136948 0.6875786350978649 -0.23177077303998203 2.685743132416301
+        children [
+          DEF wdt Shape {
+            appearance PBRAppearance {
+              baseColor 1 0 0
+              metalness 0
+            }
+            geometry Cylinder {
+              height 0.05
+              radius 0.03
+            }
+          }
+        ]
+        name "wheel_if"
+        boundingObject USE wdt
+        physics Physics {
+        }
+      }
+    }
+    DEF rit HingeJoint {
+      jointParameters HingeJointParameters {
+        position 128.15505820917363
+        anchor 0.07 -0.025 -0.05
+      }
+      device [
+        RotationalMotor {
+          name "m_rit"
+        }
+      ]
+      endPoint DEF wheel_it Solid {
+        translation 0.06999999999999999 -0.02500210423728601 -0.05000069732701184
+        rotation 0.6881264844362394 0.687578728945646 -0.23177021577181156 2.6857441908912123
+        children [
+          DEF wdt Shape {
+            appearance PBRAppearance {
+              baseColor 1 0 0
+              metalness 0
+            }
+            geometry Cylinder {
+              height 0.05
+              radius 0.03
+            }
+          }
+        ]
+        name "wheel_it"
+        boundingObject USE wdt
+        physics Physics {
+        }
+      }
+    }
+    DEF rdt HingeJoint {
+      jointParameters HingeJointParameters {
+        position 124.94147073802962
+        anchor -0.07 -0.025 -0.05
+      }
+      device [
+        RotationalMotor {
+          name "m_rdt"
+        }
+      ]
+      endPoint DEF wheel_dt Solid {
+        translation -0.07 -0.025002104237290615 -0.05000069732699796
+        rotation -0.33337368232194714 -0.33310831357210097 -0.881986870290174 1.6952555451428333
+        children [
+          DEF wdt Shape {
+            appearance PBRAppearance {
+              baseColor 1 0 0
+              metalness 0
+            }
+            geometry Cylinder {
+              height 0.05
+              radius 0.03
+            }
+          }
+        ]
+        name "wheel_dt(1)"
+        boundingObject USE wdt
+        physics Physics {
+        }
+      }
+    }
+    DEF rdf HingeJoint {
+      jointParameters HingeJointParameters {
+        position 124.94146904511193
+        anchor -0.07 -0.025 0.05
+      }
+      device [
+        RotationalMotor {
+          name "m_rdf"
+        }
+      ]
+      endPoint DEF wheel_df Solid {
+        translation -0.07 -0.025002104237317496 0.04999930267308314
+        rotation -0.3333743464440144 -0.3331089771655203 -0.8819863686388624 1.6952561095175995
+        children [
+          DEF wdt Shape {
+            appearance PBRAppearance {
+              baseColor 1 0 0
+              metalness 0
+            }
+            geometry Cylinder {
+              height 0.05
+              radius 0.03
+            }
+          }
+        ]
+        name "wheel_dt"
+        boundingObject USE wdt
+        physics Physics {
+        }
+      }
+    }
+    DEF body Shape {
+      appearance PBRAppearance {
+        baseColor 0 0 1
+        metalness 0
+      }
+      geometry Box {
+        size 0.18 0.03 0.18
+      }
+    }
+  ]
+  boundingObject USE body
+  physics Physics {
+  }
+  controller "ptaos_w3_v10"
+}

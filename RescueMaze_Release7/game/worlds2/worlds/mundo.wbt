@@ -1,0 +1,353 @@
+#VRML_SIM R2021a utf8
+WorldInfo {
+  coordinateSystem "NUE"
+}
+Viewpoint {
+  orientation 0.0065590115468666015 0.7361518063162038 0.6767846758201004 3.1468628381626056
+  position 0.6092482918882507 4.949327266662046 -0.30352684352323367
+}
+TexturedBackground {
+}
+TexturedBackgroundLight {
+}
+Robot {
+  children [
+    DEF ds_df DistanceSensor {
+      translation -0.08 0.015 0.07
+      rotation 0 1 0 -3.1415853071795863
+      children [
+        DEF caja Shape {
+          appearance PBRAppearance {
+            baseColor 0 1 0
+            metalness 0
+          }
+          geometry Box {
+            size 0.02 0.03 0.04
+          }
+        }
+      ]
+      name "ds_df"
+      boundingObject USE caja
+      physics Physics {
+      }
+      type "sonar"
+    }
+    DEF ds_dt DistanceSensor {
+      translation -0.08 0.015 -0.08
+      rotation 0 1 0 -3.1415853071795863
+      children [
+        DEF caja Shape {
+          appearance PBRAppearance {
+            baseColor 0 1 0
+            metalness 0
+          }
+          geometry Box {
+            size 0.02 0.03 0.04
+          }
+        }
+      ]
+      name "ds_dt"
+      boundingObject USE caja
+      physics Physics {
+      }
+      type "sonar"
+    }
+    DEF ds_it DistanceSensor {
+      translation 0.08 0.015 -0.08
+      children [
+        DEF caja Shape {
+          appearance PBRAppearance {
+            baseColor 0 1 0
+            metalness 0
+          }
+          geometry Box {
+            size 0.02 0.03 0.04
+          }
+        }
+      ]
+      name "ds_it"
+      boundingObject USE caja
+      physics Physics {
+      }
+      type "sonar"
+    }
+    DEF ds_if DistanceSensor {
+      translation 0.08 0.015 0.07
+      children [
+        DEF caja Shape {
+          appearance PBRAppearance {
+            baseColor 0 1 0
+            metalness 0
+          }
+          geometry Box {
+            size 0.02 0.03 0.04
+          }
+        }
+      ]
+      name "ds_if"
+      boundingObject USE caja
+      physics Physics {
+      }
+      type "sonar"
+    }
+    DEF ds_fi DistanceSensor {
+      translation 0.07 0.015 0.11
+      rotation 0 1 0 -1.57
+      children [
+        DEF caja Shape {
+          appearance PBRAppearance {
+            baseColor 0 1 0
+            metalness 0
+          }
+          geometry Box {
+            size 0.02 0.03 0.04
+          }
+        }
+      ]
+      name "ds_fi"
+      boundingObject USE caja
+      physics Physics {
+      }
+    }
+    DEF ds_fd DistanceSensor {
+      translation -0.07 0.015 0.11
+      rotation 0 1 0 -1.57
+      children [
+        DEF caja Shape {
+          appearance PBRAppearance {
+            baseColor 0 1 0
+            metalness 0
+          }
+          geometry Box {
+            size 0.02 0.03 0.04
+          }
+        }
+      ]
+      name "ds_fd"
+      boundingObject USE caja
+      physics Physics {
+      }
+    }
+    DEF rif HingeJoint {
+      jointParameters HingeJointParameters {
+        position 127.83505454019618
+        anchor 0.07 -0.025 0.05
+      }
+      device [
+        RotationalMotor {
+          name "m_rif"
+        }
+      ]
+      endPoint DEF wheel_if Solid {
+        translation 0.07 -0.025 0.05
+        rotation 0.6628709412955178 0.662343289467167 -0.3491467915989016 2.4692678090689797
+        children [
+          DEF wdt Shape {
+            appearance PBRAppearance {
+              baseColor 1 0 0
+              metalness 0
+            }
+            geometry Cylinder {
+              height 0.05
+              radius 0.03
+            }
+          }
+        ]
+        name "wheel_if"
+        boundingObject USE wdt
+        physics Physics {
+        }
+        linearVelocity -6.668114276159409e-13 -8.038587134825212e-16 -2.988409595059449e-14
+        angularVelocity -7.580058893969848e-13 1.5440870508550096e-13 2.2446192891505104e-11
+      }
+    }
+    DEF rit HingeJoint {
+      jointParameters HingeJointParameters {
+        position 127.83505603854184
+        anchor 0.07 -0.025 -0.05
+      }
+      device [
+        RotationalMotor {
+          name "m_rit"
+        }
+      ]
+      endPoint DEF wheel_it Solid {
+        translation 0.07 -0.025 -0.05
+        rotation 0.6628710880496109 0.6623434361044422 -0.34914623480324886 2.4692688022788847
+        children [
+          DEF wdt Shape {
+            appearance PBRAppearance {
+              baseColor 1 0 0
+              metalness 0
+            }
+            geometry Cylinder {
+              height 0.05
+              radius 0.03
+            }
+          }
+        ]
+        name "wheel_it"
+        boundingObject USE wdt
+        physics Physics {
+        }
+        linearVelocity -6.678218574036996e-13 -2.508116452945448e-16 -1.618398984292526e-14
+        angularVelocity -7.800677412502307e-13 1.5419790900325796e-13 2.2486222349803018e-11
+      }
+    }
+    DEF rdt HingeJoint {
+      jointParameters HingeJointParameters {
+        position 124.62146857389182
+        anchor -0.07 -0.025 -0.05
+      }
+      device [
+        RotationalMotor {
+          name "m_rdt"
+        }
+      ]
+      endPoint DEF wheel_dt Solid {
+        translation -0.07 -0.025 -0.05
+        rotation -0.44595817488188433 -0.4456031877619416 -0.776246806957951 1.8206440320457824
+        children [
+          DEF wdt Shape {
+            appearance PBRAppearance {
+              baseColor 1 0 0
+              metalness 0
+            }
+            geometry Cylinder {
+              height 0.05
+              radius 0.03
+            }
+          }
+        ]
+        name "wheel_dt(1)"
+        boundingObject USE wdt
+        physics Physics {
+        }
+        linearVelocity -6.439641858235832e-13 -2.513185335435166e-16 -1.4972631055819745e-14
+        angularVelocity -7.433069417411612e-13 1.5424157442498549e-13 2.1261693983419082e-11
+      }
+    }
+    DEF rdf HingeJoint {
+      jointParameters HingeJointParameters {
+        position 124.62146691967347
+        anchor -0.07 -0.025 0.05
+      }
+      device [
+        RotationalMotor {
+          name "m_rdf"
+        }
+      ]
+      endPoint DEF wheel_df Solid {
+        translation -0.07 -0.025 0.05
+        rotation -0.4459586896439068 -0.4456037021142082 -0.7762462159606329 1.8206447697584045
+        children [
+          DEF wdt Shape {
+            appearance PBRAppearance {
+              baseColor 1 0 0
+              metalness 0
+            }
+            geometry Cylinder {
+              height 0.05
+              radius 0.03
+            }
+          }
+        ]
+        name "wheel_dt"
+        boundingObject USE wdt
+        physics Physics {
+        }
+        linearVelocity -6.436740120921524e-13 -2.0080260924550193e-16 -3.024347473170656e-14
+        angularVelocity -7.502373505866324e-13 1.545488563657474e-13 2.1222522437919104e-11
+      }
+    }
+    DEF body Shape {
+      appearance PBRAppearance {
+        baseColor 0 0 1
+        metalness 0
+      }
+      geometry Box {
+        size 0.18 0.03 0.24
+      }
+    }
+  ]
+
+}
+Group {
+  children [
+    DEF TILE_2-2 worldTile {
+      xPos 2
+      zPos 2
+      floor TRUE
+      rightWall TRUE
+      bottomWall TRUE
+    }
+    DEF TILE_1-2 worldTile {
+      xPos 1
+      zPos 2
+      floor TRUE
+      bottomWall TRUE
+    }
+    DEF TILE_2-1 worldTile {
+      xPos 2
+      zPos 1
+      floor TRUE
+      rightWall TRUE
+    }
+    DEF TILE_1-1 worldTile {
+      xPos 1
+      zPos 1
+      floor TRUE
+    }
+    DEF TILE_0-2 worldTile {
+      zPos 2
+      floor TRUE
+      bottomWall TRUE
+      leftWall TRUE
+    }
+    DEF TILE_0-1 worldTile {
+      zPos 1
+      floor TRUE
+      rightWall TRUE
+      leftWall TRUE
+    }
+    DEF TILE_5-0 worldTile {
+      xPos 5
+      floor TRUE
+      rightWall TRUE
+      bottomWall TRUE
+      start TRUE
+    }
+    DEF TILE_4-0 worldTile {
+      xPos 4
+      floor TRUE
+      topWall TRUE
+      bottomWall TRUE
+    }
+    DEF TILE_3-0 worldTile {
+      xPos 3
+      floor TRUE
+      topWall TRUE
+      bottomWall TRUE
+    }
+    DEF TILE_2-0 worldTile {
+      xPos 2
+      floor TRUE
+      topWall TRUE
+      bottomWall TRUE
+    }
+    DEF TILE_1-0 worldTile {
+      xPos 1
+      floor TRUE
+      topWall TRUE
+      bottomWall TRUE
+      bottomRightCorner TRUE
+    }
+    DEF TILE_0-0 worldTile {
+      floor TRUE
+      topWall TRUE
+      leftWall TRUE
+      topLeftCorner TRUE
+      bottomRightCorner TRUE
+    }
+  ]
+}
