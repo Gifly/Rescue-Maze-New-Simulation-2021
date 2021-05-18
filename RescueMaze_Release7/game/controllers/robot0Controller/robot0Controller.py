@@ -54,7 +54,10 @@ leftSensors[0].enable(timeStep)
 leftSensors.append(robot.getDistanceSensor("ps6"))
 leftSensors[1].enable(timeStep)
 
-
+positionSensor1 = robot.getPositionSensor('left wheel sensor')
+positionSensor1.enable(timeStep)
+positionSensor2 = robot.getPositionSensor('right wheel sensor')
+positionSensor2.enable(timeStep)
 #left wheel speed, right wheel speed
 speeds = [max_velocity,max_velocity]
 
@@ -84,46 +87,31 @@ def stop():
     
 
 def move_forward():
-    global duration
-    global start_time 
-    speeds[0] =  max_velocity
-    #set right wheel speed
-    speeds[1] = max_velocity
-    wheel_left.setVelocity(speeds[0])
-    wheel_right.setVelocity(speeds[1])
-    wheel_left.setPosition(float('inf'))
-    wheel_right.setPosition(float('inf'))
-    duration = 1
-    start_time = robot.getTime()
+    leftOffset = positionSensor1.getValue()
+    rightOffset = positionSensor2.getValue()
+    wheel_left.setPosition(leftOffset + 5.7)
+    wheel_right.setPosition(rightOffset + 5.7)
+    robot.step(800)
+    
     
 
 def turn_left():
-    global duration
-    global start_time
-    #set left wheel speed
-    speeds[0] = -max_velocity
-    #set right wheel speed
-    speeds[1] = max_velocity
-    wheel_left.setVelocity(speeds[0])
-    wheel_right.setVelocity(speeds[1])
-    wheel_left.setPosition(float('inf'))
-    wheel_right.setPosition(float('inf'))
-    duration = 1
-    start_time = robot.getTime()
+    leftOffset = positionSensor1.getValue()
+    rightOffset = positionSensor2.getValue()
+    wheel_left.setPosition(leftOffset + 2)
+    wheel_right.setPosition(rightOffset - 2)
+    robot.step(800)
+    
+
+    
     
 def turn_right():
-    global duration
-    global start_time
-    #set left wheel speed
-    speeds[0] = max_velocity
-    #set right wheel speed
-    speeds[1] = -max_velocity
-    wheel_left.setVelocity(speeds[0])
-    wheel_right.setVelocity(speeds[1])
-    wheel_left.setPosition(float('inf'))
-    wheel_right.setPosition(float('inf'))
-    duration = 1
-    start_time = robot.getTime()
+    leftOffset = positionSensor1.getValue()
+    rightOffset = positionSensor2.getValue()
+    wheel_left.setPosition(leftOffset - 2)
+    wheel_right.setPosition(rightOffset + 2)
+    robot.step(800)
+    
 
 def move_backwards():
     #set left wheel speed
@@ -138,6 +126,13 @@ def move_backwards():
 
 
 while robot.step(timeStep) != -1:
+    
+    #turn_left()
+    move_forward()
+    print(frontSensors[0].getValue(), frontSensors[1].getValue())
+    break
+
+   
     
     # colour = colour_camera.getImage()
     # if start_time + duration > robot.getTime():
@@ -162,20 +157,20 @@ while robot.step(timeStep) != -1:
     # else:
     #     move_forward()
 
-    colour = colour_camera.getImage()
-    if colour != hole_colour or colour != swamp_colour:
-        if frontSensors[0].getValue() > sensor_value and frontSensors[1].getValue() > sensor_value:
-            move_forward()
-        else:
-            if rightSensors[1].getValue() > sensor_value:
-                turn_left()
-                
-            elif leftSensors[1].getValue() > sensor_value:
-                turn_right()
-            else:
-                move_backwards()
-    else:
-        move_backwards()
+    # colour = colour_camera.getImage()
+    # if colour != hole_colour or colour != swamp_colour:
+    #     if frontSensors[0].getValue() > sensor_value and frontSensors[1].getValue() > sensor_value:
+    #         move_forward()
+    #     else:
+    #         if rightSensors[1].getValue() > sensor_value:
+    #             turn_left()
+    #             pass
+    #         elif leftSensors[1].getValue() > sensor_value:
+    #             turn_right()
+    #         else:
+    #             move_backwards()
+    # else:
+    #     move_backwards()
 
     
     
