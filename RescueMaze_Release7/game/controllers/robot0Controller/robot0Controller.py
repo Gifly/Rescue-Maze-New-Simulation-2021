@@ -1,9 +1,12 @@
-#Axel branch XD
+###### STILL MODIFYING ############
 from controller import Robot
 import time
+import math
+import struct
 
 timeStep = 32 
 max_velocity = 6.28
+messageSent = False
 sensor_value = 0.1
 duration = 0
 start_time = 0
@@ -21,10 +24,13 @@ swamp_colour = b'\x8e\xde\xf4\xff'
 # Declare cameras
 camera = robot.getCamera("camera_centre")
 camera.enable(timeStep)
-camerar = robot.getCamera("camera_right")
-camerar.enable(timeStep)
-cameral = robot.getCamera("camera_left")
-cameral.enable(timeStep)
+camera.recognitionEnable(timeStep)
+
+
+emitter = robot.getEmitter("emitter")
+
+gps = robot.getGPS("gps")
+gps.enable(timeStep)
 
 # Declare colour sensor underneith the robot
 colour_camera = robot.getCamera("colour_sensor")
@@ -75,6 +81,42 @@ speeds = [max_velocity,max_velocity]
 
 #     print("fuera while")
 
+def sendMessage():
+    global messageSent
+    position = gps.getValues()
+    if not messageSent:
+        message = struct.pack('i i i c', 0, int(position[0] * 100), int(position[2] * 100), b'H')
+        emitter.send(message)
+        messageSent = True
+
+
+def nearObject(position):
+    return math.sqrt((position[0]**2) + (position[2] ** 2)) < 0.1
+
+def getVisibleVictims():
+    objects = camera.getRecognitionObjects()
+
+    victims = []
+
+    for item in objects:
+        if item.getColors() == [1,1,1]:
+            victim_pos = item.get_position()
+            victims.append(victim_pos)
+    return victims
+
+def stopAtVictim():
+    victims = getVisibleVictims()
+
+    foundVictim = False
+    for victim in victims:
+        if nearObject(victim):
+            stop()
+            sendMessage()
+            foundVictim = True
+
+    if not foundVictim:
+        messageSent = False
+
 def stop():
     #set left wheel speed
     speeds[0] = 0 * max_velocity
@@ -98,42 +140,37 @@ def move_forward():
 def turn_left():
     leftOffset = positionSensor1.getValue()
     rightOffset = positionSensor2.getValue()
-    wheel_left.setPosition(leftOffset + 2)
-    wheel_right.setPosition(rightOffset - 2)
+    wheel_left.setPosition(leftOffset - 2.1)
+    wheel_right.setPosition(rightOffset + 2.1)
     robot.step(800)
-    
 
-    
     
 def turn_right():
     leftOffset = positionSensor1.getValue()
     rightOffset = positionSensor2.getValue()
-    wheel_left.setPosition(leftOffset - 2)
-    wheel_right.setPosition(rightOffset + 2)
+    wheel_left.setPosition(leftOffset + 2.1)
+    wheel_right.setPosition(rightOffset - 2.1)
     robot.step(800)
     
 
 def move_backwards():
-    #set left wheel speed
-    speeds[0] = -0.7 * max_velocity
-    #set right wheel speed
-    speeds[1] = -0.9 * max_velocity
-    wheel_left.setVelocity(speeds[0])
-    wheel_right.setVelocity(speeds[1])
-    wheel_left.setPosition(float('inf'))
-    wheel_right.setPosition(float('inf'))
+    leftOffset = positionSensor1.getValue()
+    rightOffset = positionSensor2.getValue()
+    wheel_left.setPosition(leftOffset - 5.7)
+    wheel_right.setPosition(rightOffset - 5.7)
+    robot.step(800)
+
+def spin():
+    leftOffset = positionSensor1.getValue()
+    rightOffset = positionSensor2.getValue()
+    wheel_left.setPosition(leftOffset + 4.5)
+    wheel_right.setPosition(rightOffset - 4.5)
+    robot.step(800)
     
 
 
 while robot.step(timeStep) != -1:
-    
-    #turn_left()
-    move_forward()
-    print(frontSensors[0].getValue(), frontSensors[1].getValue())
-    break
-
-   
-    
+    speeds = [0.5 * max_velocity, 0.5* max_velocity]
     # colour = colour_camera.getImage()
     # if start_time + duration > robot.getTime():
     #     print("start time", start_time)
@@ -157,20 +194,22 @@ while robot.step(timeStep) != -1:
     # else:
     #     move_forward()
 
-    # colour = colour_camera.getImage()
-    # if colour != hole_colour or colour != swamp_colour:
-    #     if frontSensors[0].getValue() > sensor_value and frontSensors[1].getValue() > sensor_value:
-    #         move_forward()
-    #     else:
-    #         if rightSensors[1].getValue() > sensor_value:
-    #             turn_left()
-    #             pass
-    #         elif leftSensors[1].getValue() > sensor_value:
-    #             turn_right()
-    #         else:
-    #             move_backwards()
-    # else:
-    #     move_backwards()
+    colour = colour_camera.getImage()
+    if colour != hole_colour or colour != swamp_colour:
+        if frontSensors[0].getValue() > sensor_value and frontSensors[1].getValue() > sensor_value:
+            move_forward()
+        else:
+            if rightSensors[0].getValue() > sensor_value:
+                turn_right()
+            elif leftSensors[0].getValue() > sensor_value:
+                turn_left()
+            else:
+                move_backwards()
+                turn_right()
+    else:
+        spin()
 
+    #stopAtVictim()
     
-    
+    #https://github.com/gopi231091/Bug0-Algorithm-Implementation-on-E-Puck-Robot/blob/master/e-puck.c
+    #https://stackoverflow.com/questions/61150174/reset-webots-position-sensor
